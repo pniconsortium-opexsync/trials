@@ -1,0 +1,815 @@
+.mainbody {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  /* border: 1px solid red; */
+  flex-direction: column;
+  /* align-items: center; */
+  
+}
+
+.mobnavbar {
+  visibility: hidden;   /* instead of display: none */
+  opacity: 0;
+  background: #fff;
+  width: 100%;
+  position: absolute;
+  top: 16vw;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1;
+  height: auto;
+
+  transform: translateY(-20px);
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0s linear 0.35s;
+}
+
+.mobnavbar.show {
+  visibility: visible; /* make it visible */
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.mobnavbar ul
+{
+  color: rgb(0, 0, 0);
+  list-style: none;
+  margin-left: 1vw;
+  
+}
+
+.mobnavbar li {
+  color: black;
+  font-family: 'InterCustom';
+  margin-top: 5vw;
+
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* When navbar is shown, animate li */
+.mobnavbar.show li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: stagger animation for each li */
+.mobnavbar.show li:nth-child(1) { transition-delay: 0.05s; }
+.mobnavbar.show li:nth-child(2) { transition-delay: 0.1s; }
+.mobnavbar.show li:nth-child(3) { transition-delay: 0.15s; }
+.mobnavbar.show li:nth-child(4) { transition-delay: 0.2s; }
+.mobnavbar.show li:nth-child(5) { transition-delay: 0.25s; }
+/* When state = open */
+
+
+/* Menu icon always clickable */
+.menuicon {
+  cursor: pointer;
+}
+
+.navbartop {
+  width: 100vw;
+  height: 6vw;
+  display: flex;
+  justify-content: center;
+  /* background-color: yellow; */
+}
+
+.navbar {
+  width: 80vw;
+  height: 6vw;
+  /* background-color: red; */
+  display: flex;
+}
+
+.navlogo {
+  width: 10vw;
+  /* width: 200px; */
+  height: 100%;
+  /* background-color: rgb(48, 0, 125); */
+}
+
+.navlogo img {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.navoptions {
+  /* background: #b7ff00; */
+  width: 60vw;
+  display: flex;
+  font-family: "InterCustom";
+  font-weight: normal;
+  color: #555963;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9vw;
+}
+
+.navoptions ul {
+  display: flex;
+  list-style: none;
+  gap: 3vw;
+}
+
+.menuicon img{
+  width: 2vw;
+  height: 2vw;
+}
+
+.menuicon{
+  margin-right: -2vw;
+}
+
+
+
+.getquote {
+  /* background-color: blue; */
+  width: 10vw;
+  height: auto;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.getquotebutton {
+  background-color: #4a23ae;
+  border-radius: 0.3vw;
+}
+
+.getquotebutton h3 {
+  /* color: red; */
+  margin: 0.6vw 1.5vw 0.6vw 1.5vw;
+  font-family: "InterCustom";
+  font-weight: 400;
+  font-size: 0.9vw;
+}
+
+
+
+.banner {
+  width: 100vw;
+  height: 35vw;
+  background-color: rgb(0, 0, 0);
+  background-image: url("/images/service/Desktop\ -\ 14.png");
+  background-size: cover; /* fills container */
+  background-position: center; /* centers image */
+  background-repeat: no-repeat; /* avoids tiling */
+}
+
+/* .bannercontent{
+    width: 10vw;
+    height: 30vw;
+    background-color: red;
+    margin-left: 10.2vw;
+} */
+
+.banner h3 {
+  color: white;
+  margin-left: 10.2vw;
+  font-family: "InterCustom";
+  font-size: 3.2vw;
+  margin-top: 10vw;
+  font-weight: 500;
+}
+
+.banner p {
+  color: white;
+  margin-left: 10.2vw;
+  font-family: "InterCustom";
+  font-size: 1.3vw;
+  margin-top: 2.5vw;
+  font-weight: 300;
+  width: 25vw;
+  line-height: 2vw;
+}
+
+.bannerbutton {
+  width: 14vw;
+  height: 3.5vw;
+  background-color: white;
+  margin-left: 10.2vw;
+  margin-top: 2.5vw;
+  border-radius: 0.3vw;
+  color: #4a23ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "InterCustom";
+}
+
+.bannerbutton h4 {
+  font-weight: 500;
+  font-size: 0.9vw;
+}
+
+/* SERVICE SECTION STARTS HERE */
+
+
+.service{
+  width: 100vw;
+  height: auto;
+  color: #15172E;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.servicewrapper {
+  width: 80vw;
+  height: 35vw;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto; /* center it horizontally if needed */
+  display: flex;
+  gap: 2vw;
+  margin-top: 6vw;
+
+}
+
+.servicewrap {
+  width: 100%;
+  height: 100%;
+  background-color: #F2F1F7;
+  border-radius: 1vw 1vw 1vw 1vw;
+  
+}
+
+.servicewrap h4{
+  font-family: 'InterCustom';
+  font-size: 1.5vw;
+  margin-top: 2.5vw;
+  margin-left: 2vw;
+}
+
+.servicewrap ul{
+  list-style-type: disc;
+  margin-left: 1vw;
+  margin-top: 2vw;
+}
+
+.servicewrap li{
+  font-size: 1vw;
+  font-family: 'InterCustom';
+  margin-left: 2vw;
+  margin-top: 1vw;
+}
+
+.serviceimageplacerone {
+  width: 100%;
+  height: 40%;
+  background: url('/images/service/ImageWithFallback.png') no-repeat center center;
+  background-size: cover; /* scale image to cover entire div */
+  border-radius: 1vw 1vw 0vw 0vw;
+  
+}
+
+.serviceimageplacertwo {
+  width: 100%;
+  height: 40%;
+  background: url('/images/service/Container.png') no-repeat center center;
+  background-size: cover; /* scale image to cover entire div */
+  border-radius: 1vw 1vw 0vw 0vw;
+}
+
+.serviceimageplacerthree {
+  width: 100%;
+  height: 40%;
+  background: url('/images/service/phone\ calling.png') no-repeat center center;
+  background-size: cover; /* scale image to cover entire div */
+  border-radius: 1vw 1vw 0vw 0vw;
+}
+
+
+
+/* FOOTER SECTION STARTS HERE  */
+
+
+.footer{
+  width: 100%;
+  height: auto;
+  background-color: #0C002C;
+  margin-top: 6vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 4vw;
+        color: rgb(255, 255, 255);
+}
+
+.footer h1{
+  font-family: 'InterCustom';
+  font-weight: 500;
+  font-size: 2.5vw;
+}
+
+.footerwrapper{
+  width: 80vw;
+  height: auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 3.5vw;
+}
+
+.footerwraptwo{
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.footerwraptwo h2{
+  font-family: 'InterCustom';
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.footerwraptwo p{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+  font-weight: 400;
+  margin-top: 1.5vw;
+  line-height: 1.4vw;
+}
+
+.footerwraptwo h1{
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.footerwraptwo ul{
+  list-style-type: none;
+  line-height: 2vw;
+}
+
+.footerwraptwo ul li{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+
+}
+
+.footerwrapthree{
+  width: 100%;
+  height: 100%;
+  /* background-color: blue; */
+}
+
+.footerwrapthree h2{
+  font-family: 'InterCustom';
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.footerwrapthree p{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+  font-weight: 400;
+  margin-top: 1.5vw;
+  line-height: 1.4vw;
+}
+
+.footerwrapthree h1{
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-bottom: 1vw;
+}
+
+.footerwrapthree ul{
+  list-style-type: none;
+  line-height: 2vw;
+
+}
+
+.footerwrapthree ul li{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+
+
+}
+
+.footerwrapone{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+  gap: 1vw;
+ 
+}
+
+.footerwrapone h1{
+  font-size: 1.3vw;
+  font-weight: 500;
+  /* margin-bottom: 10px; */
+}
+
+.footerwrapone h2{
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-top: 1vw;
+  font-family: 'InterCustom';
+}
+
+.address{
+  width: auto;
+  height: auto;
+  /* background-color: rosybrown; */
+  display: flex;
+  /* margin-top: 1.5vw; */
+  gap: 1vw;
+  align-items: center;
+}
+
+.address h1{
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.address img{
+  width: 1.2vw;
+  height: 1.1vw;
+}
+
+.address p{
+  font-family: 'InterCustom';
+  font-size: 0.9vw ;
+}
+
+
+.numberchange{
+  /* background-color: yellow; */
+  display: flex;
+  gap: 1vw;
+}
+
+.numberchange img{
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.numberchange p{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+}
+
+
+.addressemail{
+  display: flex;
+  /* background-color: orange; */
+  flex-direction: column;
+    gap: 1vw;
+}
+
+.emailchange{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.emailchange img{
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.emailchange p{
+  font-family: 'InterCustom';
+  font-size: 0.9vw;
+}
+
+
+
+.footericons{
+  width: auto;
+  height: auto;
+  /* background-color: purple; */
+  display: flex;
+  gap: 1.2vw;
+}
+
+.footericons img{
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #241941;
+  border-radius: 30%;
+  padding: 0.6vw;
+}
+
+.boarderlineone{
+  width: 80vw;
+  height: auto;
+  margin-top: 3vw;
+  border-radius: 1vw;
+  display: flex;
+  border: 0.1vw solid #2B2B2B;
+}
+
+.footer h6{
+  color: rgb(255, 255, 255);
+  font-family: 'InterCustom';
+  margin: 2vw 0vw 2vw 0vw;
+  font-size: 1vw;
+  font-weight: 300;
+}
+
+
+/* SCREENSIZES BELOW 800PX SCREENSIZES BELOW 800PX */
+
+
+@media (max-width: 900px) {
+  /* styles for screens smaller than 960px */
+
+  .navbartop{
+    height: 6vw;
+  }
+
+  .navoptions{
+    justify-content: flex-end;
+  }
+
+  .navlogo{
+    width: 13vw;
+  }
+
+  .navoptions ul{
+    display: none;
+  }
+
+  .getquote{
+    display: none;
+  }
+
+}
+
+@media (min-width: 900px){
+  .menuicon img{
+    display: none;
+  }
+}
+
+
+/* MOBILE RESPONSIVE STARTS FROM HERE // MOBILE RESPONSIVE STARTS FROM HERE */
+
+
+@media (min-width: 500px) {
+  .brone{
+  display: none;
+}
+
+#since{
+  display: none;
+}
+
+
+
+}
+
+@media (max-width: 500px){
+
+.navbartop{
+  height: 15vw;
+  /* background-color: yellow; */
+}
+
+.navbar{
+  height: 15vw;
+  width: 90vw;
+}
+
+.navlogo{
+  width: auto;
+  height: 15vw;
+}
+
+.menuicon img{
+  width: 5vw;
+  height: 5vw;
+}
+
+.banner{
+  height: 80vw;
+  background-position: 40%;
+  background-image: 
+    linear-gradient(#00000080, #4A23AE),
+    url("/images/service/Desktop\ -\ 14.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.banner h3{
+  font-size: 8vw;
+  margin-top: 40vw;
+  margin-left: 6vw;
+  line-height: 11vw;
+}
+
+.banner p{
+  font-size: 3vw;
+  margin-left: 6vw;
+  line-height: 5vw;
+  width: 85vw;
+}
+
+
+.menuicon {
+  margin-right: 1vw;
+}
+
+
+.service{
+  width: 100vw;
+  height: auto;
+  color: #15172E;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.servicewrapper {
+  width: 90vw;
+  height: auto;
+  /* background-color: rgb(11, 214, 143); */
+  margin: 0 auto; /* center it horizontally if needed */
+  display: flex;
+  gap: 6vw;
+  margin-top: 8vw;
+  flex-direction: column;
+
+}
+
+.servicewrap {
+  width: 100%;
+  height: 120vw;
+  background-color: #F2F1F7;
+  border-radius: 3vw 3vw 3vw 3vw;
+  
+}
+
+.servicewrap h4{
+  font-family: 'InterCustom';
+  font-size: 6vw;
+  margin-top: 5vw;
+  margin-left: 6vw;
+  font-weight: 600;
+}
+
+.servicewrap ul{
+  list-style-type: disc;
+  margin-left: 1vw;
+  margin-top: 4vw;
+  display: flex;
+  gap: 3vw;
+  flex-direction: column;
+
+}
+
+.servicewrap li{
+  font-size: 3vw;
+  font-family: 'InterCustom';
+  margin-left: 9vw;
+  margin-top: 1vw;
+}
+
+.serviceimageplacerone {
+  width: 100%;
+  height: 40%;
+ 
+  
+}
+
+.serviceimageplacertwo {
+  width: 100%;
+  height: 40%;
+
+}
+
+.serviceimageplacerthree {
+  width: 100%;
+  height: 40%;
+ 
+}
+
+
+
+
+
+
+.footer h1{
+  font-size: 6vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.footerwrapper{
+  flex-direction: column;
+}
+
+.footerwraptwo{
+  display: none;
+}
+
+.footerwrapthree h1{
+  font-size: 3.5vw;
+  margin-top: 0;
+  margin-bottom: 3.5vw;
+}
+
+.footerwrapthree ul li{
+  font-size: 3vw;
+  line-height: 6vw;
+      color: white;
+}
+
+.footerwrapone h1{
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
+}
+
+.footerwrapone h2{
+  font-size: 3.5vw;
+  margin-bottom: 3.5vw;
+  margin-top: 6vw;
+}
+
+.address{
+  display: flex;
+}
+
+.address img{
+  width: 4vw;
+  height: 4vw;
+}
+
+.address p{
+  font-size: 3vw;
+      color: white;
+  margin-bottom: 2.2vw;
+  margin-top: 2vw;
+}
+
+
+
+.numberchange{
+  display: flex;
+  align-items: center;
+}
+
+.numberchange img{
+  width: 4vw;
+  height: 4vw;
+  
+}
+
+.numberchange p{
+  font-size: 3vw;
+  margin-bottom: 2.2vw;
+  margin-top: 2vw;
+}
+
+.addressemail{
+  margin-top: 2vw;
+}
+
+.emailchange{
+  align-items: center;
+}
+
+.emailchange img{
+  width: 4vw;
+  height: 4vw;
+}
+
+.emailchange p{
+  font-size: 3vw;
+  margin-bottom: 2.2vw;
+  margin-top: 2vw;
+}
+
+
+
+
+.footericons{
+  display: flex;
+  gap: 4vw;
+}
+
+.footericons img{
+  width: 6vw;
+  height: 6vw;
+  margin-bottom: 5vw;
+}
+
+.footer h6{
+  font-size: 3vw;
+  margin: 6vw;
+}
+
+
+}

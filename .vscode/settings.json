@@ -1,0 +1,35 @@
+{
+    "cSpell.words": [
+        "abouttop",
+        "bannerbutton",
+        "bannercontent",
+        "empovering",
+        "getquote",
+        "getquotebutton",
+        "mainbody",
+        "navbartop",
+        "navlogo",
+        "navoptions",
+        "opsz",
+        "pniconsortiumlogo",
+        "pnides",
+        "pnidesi",
+        "pnidesii",
+        "pnidesn",
+        "pnidesnn",
+        "pnidesp",
+        "pnidespp",
+        "wght"
+    ],
+    "files.readonlyInclude": {
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\services\\page.js": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\blogs\\page.js": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\contact\\page.js": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\services\\service.module.css": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\blogs\\blogs.module.css": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\contact\\contact.module.css": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\page.js": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\practiceareas\\page.js": true,
+        "e:\\COMPANY\\Opexsync\\Clients\\India\\PNI Consortium (IND20251)\\Website\\pniconsortium-website\\app\\practiceareas\\practiceareas.module.css": true
+    }
+}
