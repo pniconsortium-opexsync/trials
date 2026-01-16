@@ -1,5 +1,5 @@
 "use client"
-import styles from './blogs.module.css'
+import styles from './blogone.module.css'
 import Link from 'next/link'
 import { useState } from 'react';
 
@@ -55,37 +55,51 @@ export default function Page(){
 
  {/* REST IS MY CODE REST IS MY CODE REST IS MY CODE */}
 
-      <div className={styles.banner}>
-        {/* <img src={pniconsortiumbanner} alt="pniconsortium-image" /> */}
-        {/* <div className={styles.bannercontent}> */}
-        <h3>Blogs</h3>
-        <p>Insights, updates, expert opinions, and practical guidance on legal, business, tax, and compliance developments.</p>
-        {/* </div> */}
-       
-      </div>
+
 
 
 
       {/* BLOGS SECTION STARTS HERE */}
 
-         <div className={styles.blogs}>
-    <div className={styles.gridcontainer}>
-    <div className={styles.card}>
-        <img src="/images/blogs/E-WAY-BILL-2.webp" alt="" />
-        <h5>Expiry of E-Way Bill Alone Cannot Justify Maximum GST Penalty: Kerala High Court in TP Metals Case</h5>
-        <p>The Kerala High Court, in a significant judgment delivered by Justice Gopinath P. on 30 July 2024, has held that mere expiry of an e-way bill, without any intention to evade tax, cannot automatically</p>
-        <Link href="/blogone"><h6>Know More ...</h6></Link>
-    </div>
-    <div className={styles.card}>
-        <img src="/images/blogs/istockphoto-1130669886-612x612.jpg" alt="" />
-        <h5>GST Adjudication under Scrutiny: Kerala High Court Quashes Order for Violation of Natural Justice</h5>
-        <p>M/s. Ridha Polymers, a registered dealer under the CGST/KSGST Acts, challenged an Order-in-Original (Ext. P5) passed under Section 74 of the CGST/KSGST Act, 2017 for the assessment year 2017–18. </p>
-        <Link href="/blogtwo"><h6>Know More ...</h6></Link>
-    </div>
-    
-   </div>
-   </div>
 
+<div className={styles.blogs}>
+  <div className={styles.blogone}>
+  <h4>Expiry of E-Way Bill Alone Cannot Justify Maximum GST Penalty: Kerala High Court in TP Metals Case</h4>
+  <p>The Kerala High Court, in a significant judgment delivered by Justice Gopinath P. on 30 July 2024, has held that mere expiry of an e-way bill, without any intention to evade tax, cannot automatically attract the harsh penalties prescribed under Section 129 of the CGST/SGST Acts. Advocates P N Damodaran Namboothiri & Hrithwik D Namboothiri appeared for the petitioner, while Spl. Govt. Pleader Muhammed Rafiq & Jasmine appeared for the State respondents. The ruling came in <b>2025 (143) GSTR 710 (Ker) M/s TP Metals & Roofings v. Assistant Tax Officer & Others</b> (WP(C) No. 26645 of 2021). <br /> <br />
+Facts of the Case <br /> <br />
+TP Metals & Roofings, a registered GST dealer engaged in the sale of roofing sheets and pipes, transported goods worth over ₹10.46 lakh from Kozhikode to Palakkad under a valid tax invoice and e-way bill. The e-way bill was generated at 10:00 PM on 23.10.2021 and expired at 10:00 PM on 24.10.2021. <br />
+The vehicle was intercepted by the GST Mobile Squad at 9:59 AM on 25.10.2021, after the expiry of the e-way bill and beyond the time allowed for extension. Proceedings were initiated under Section 129 of the CGST/SGST Acts, and a tax and penalty amounting to ₹3,76,824 was imposed. <br /> <br />
+Issue Before the Court <br /> <br />
+The central issue was whether expiry of an e-way bill by itself, in the absence of any finding of tax evasion, justified the imposition of maximum penalty under Section 129, or whether the case warranted only a minor penalty under Section 122(1)(xiv) for procedural lapse. <br /> <br />
+Key Findings of the High Court <br /> <br />
+The Court made several important observations: <br /> <br />
+•	Technical violation admitted: The Court accepted that there was a technical violation, as the e-way bill had expired and was not extended in time. <br />
+•	No intent to evade tax: Crucially, the Court noted that there was no finding by the authorities that the petitioner intended to evade tax. <br />
+•	Section 129 is not automatic in all cases: While Section 129 begins with a non-obstante clause, it must be read harmoniously with Sections 122 and 126 of the CGST/SGST Acts. <br />
+•	Penalty must be proportionate: The Court held that imposing maximum penalty for a mere procedural lapse would be arbitrary, disproportionate, and violative of Article 14 of the Constitution. <br /> <br />
+Reliance on Judicial Precedents <br /> <br />
+The Court relied on and reaffirmed principles laid down in: <br /> <br />
+•	Hindustan Steel Ltd. v. State of Orissa – penalty is not automatic for technical or venial breaches. <br />
+•	Podaran Foods India Pvt. Ltd. v. State of Kerala – detention is justified only when there is a possibility of tax evasion. <br />
+•	Satyam Shivam Papers Pvt. Ltd. v. Assistant Commissioner (Telangana High Court), affirmed by the Supreme Court. <br />
+•	Sanskruthi Motors v. Joint Commissioner, upheld by the Kerala High Court Division Bench. <br /> <br />
+Final Decision <br /> <br />
+The High Court: <br /> <br />
+•	Quashed the order imposing tax and penalty under Section 129. <br />
+•	Held that Section 129 penalties can be imposed only when there is intent to evade tax, repeated violations, or serious discrepancies. <br />
+•	Directed that only a penalty of ₹10,000 under Section 122(1)(xiv) (for transport without proper documents) could be imposed. <br />
+•	Ordered release of the bank guarantee furnished by the petitioner upon payment of the reduced penalty. <br /> <br />
+Legal Significance of the Judgment <br /> <br />
+This judgment is a major relief for businesses and transporters facing detention and heavy penalties for minor procedural lapses under GST. It clearly establishes that: <br /> <br />
+•	Expiry of an e-way bill is not, by itself, proof of tax evasion. <br />
+•	GST authorities must apply judicial discretion and proportionality. <br />
+•	Section 129 is meant to curb evasion, not to punish bonafide transactions with harsh penalties. <br /> <br />
+Conclusion <br /> <br />
+The TP Metals judgment reinforces the principle that GST enforcement must be fair, reasonable, and aligned with the object of preventing tax evasion, not mechanical or punitive. It provides strong legal backing for challenging excessive penalties imposed solely on technical grounds and serves as an important precedent in GST litigation.
+</p>
+</div>
+
+</div>
 
 
 

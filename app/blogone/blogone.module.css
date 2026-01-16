@@ -152,46 +152,6 @@
 }
 
 
-/* BANNERSECITON STARTS HERE */
-
-.banner {
-  width: 100vw;
-  height: 35vw;
-  background-color: rgb(0, 0, 0);
-  background-image: url("/images/blogs/blogs-banner.png");
-  background-size: cover; /* fills container */
-  background-position: center; /* centers image */
-  background-repeat: no-repeat; /* avoids tiling */
-}
-
-/* .bannercontent{
-    width: 10vw;
-    height: 30vw;
-    background-color: red;
-    margin-left: 10.2vw;
-} */
-
-.banner h3 {
-  color: #4A23AE;
-  margin-left: 10.2vw;
-  font-family: "InterCustom";
-  font-size: 3.2vw;
-  margin-top: 10vw;
-  font-weight: 500;
-}
-
-.banner p {
-  color: #4A23AE;
-  margin-left: 10.2vw;
-  font-family: "InterCustom";
-  font-size: 1.3vw;
-  margin-top: 2.5vw;
-  font-weight: 300;
-  width: 25vw;
-  line-height: 2vw;
-}
-
-
 /* BLOGS SECTION CONTAINER STARTS HERE */
 
 .blogs{
@@ -199,81 +159,30 @@
     height: auto;
     display: flex;
     justify-content: center;
-}
-
-.card{
-    padding: 2em;
-    /* border: 1px solid yellow; */
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    padding-top: 5vw;
 }
 
-.gridcontainer{
-    display: grid;
-    /* border: 1px solid rgb(208, 255, 0); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 8px;
-    justify-content: center;
-    /* background-color: blue; */
-    width: 100vw;
-    margin-top: 5vw;
-    margin-bottom: 1vw;
-
+.blogone{
+  width: 80vw;
+  height: auto;
+  /* background-color: red; */
 }
 
-.card h5{
-    font-size: 1vw;
-    font-family: 'InterCustom';
-    margin-top: 2vw;
-    color: black;   
-    width: 50%;
+.blogone h4{
+  color: rgb(0, 0, 0);
+  font-family: "InterCustom";
+  font-weight: 600;
 }
 
-.card h6{
-    font-size: 0.8vw;
-    font-family: 'InterCustom';
-    margin-top: 1vw;
-    margin-left: 15vw;
-    color: rgb(49, 49, 49);   
+.blogone p{
+  font-weight: 300;
+  font-family: 'InterCustom';
+  font-size: 1vw;
+  margin-top: 3vw;
+  color: #2b2b2b;
+  line-height: 1.5vw;
 }
-
-.card p{
-    width: 22vw;
-    margin-top: 1vw;
-    font-size: 1vw;
-    font-family: 'InterCustom';
-    text-align: start;
-    line-height: 1.6vw;
-    color: #555963;
-}
-
-.card img{
-    width:  22vw;
-    height: 10vw;
-    position: relative;
-    border-radius: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -596,111 +505,9 @@
   height: 5vw;
 }
 
-.banner{
-  height: 80vw;
-  background-position: 60%;
-  background-image: 
-    /* linear-gradient(#00000080, #000000), */
-    url("/images/blogs/blogs-banner.png");
-  background-size: cover;
-  background-position: right;
-}
-
-.banner h3{
-  font-size: 8vw;
-  margin-top: 40vw;
-  margin-left: 6vw;
-  line-height: 11vw;
-}
-
-.banner p{
+.blogone p{
   font-size: 3vw;
-  margin-left: 6vw;
   line-height: 5vw;
-  width: 85vw;
-}
-
-
-.menuicon {
-  margin-right: 1vw;
-}
-
-
-
-/* BLOGS SECTION STARTS HERE */
-
-.blogscontainer{
-    width: 100%;
-    height: auto;
-    padding: 4vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.blogscontainer h5{
-    font-family: 'InterCustom';
-    font-size: 5vw;
-    color: black;
-    font-weight: 500;
-    margin-top: 6vw;
-}
-
-
-.card{
-    padding: 2em;
-    /* border: 1px solid yellow; */
-    border-radius: 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.gridcontainer{
-    display: grid;
-    /* border: 1px solid rgb(208, 255, 0); */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    /* background-color: blue; */
-    width: 90vw;
-    margin-top: 5vw;
-    margin-bottom: 1vw;
-
-}
-
-.card h5{
-    font-size: 4.6vw;
-    font-family: 'InterCustom';
-    margin-top: 6vw;
-    width: 90vw;
-}
-
-.card h6{
-    font-size: 3.5vw;
-    font-family: 'InterCustom';
-    margin-top: 1vw;
-    margin-left: 50vw;
-    color: rgb(49, 49, 49);   
-}
-
-
-
-.card p{
-    width: 100%;
-    margin-top: 3vw;
-    font-size: 3vw;
-    font-family: 'InterCustom';
-    text-align: start;
-    line-height: 5vw;
-    width: 90vw;
-}
-
-.card img{
-    width:  100%;
-    height: 100%;
-    position: relative;
 }
 
 

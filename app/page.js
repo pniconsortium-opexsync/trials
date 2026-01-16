@@ -202,7 +202,7 @@ export default function Home() {
 
 
         <div className={styles.pro}>
-          <img src="/images/home/Rectangle 12.jpeg" />
+          <img src="/images/home/Rectangle 12.png" />
           <div className={styles.propara}>
             <h4>Our Professional Legal,  <br />
               Accounting & CA Services</h4>
